@@ -1,0 +1,16 @@
+.repos-list-ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  list-style-type: none;
+  height: 20vh;
+}
+.repos-list-li {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+

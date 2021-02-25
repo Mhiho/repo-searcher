@@ -13,7 +13,7 @@ function Layout({ children }) {
     <div className="App">
       <header className="App-header">
         <nav>
-          <ul>
+          <ul className='layout-ul'>
             { menuLinks.map((item,index) => {
               return <li key={`menuLink-${index}`}><Link to={item.link}>{item.name}</Link></li>
             })}
