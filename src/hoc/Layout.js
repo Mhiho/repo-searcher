@@ -4,8 +4,8 @@ import '../style/layout.scss';
 
 const menuLinks = [
   {name: 'Wyszukiwarka', link: '/'},
-  {name: 'Opis aplikacji', link: '/opis'},
-  {name: 'Silnia', link: '/silnia'}
+  {name: 'Opis aplikacji', link: '/description'},
+  {name: 'Silnia', link: '/math'}
 ]
 
 function Layout({ children }) {

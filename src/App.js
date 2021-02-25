@@ -12,8 +12,8 @@ function App() {
     <Router>
       <Switch>
         <Route exact path={`/`} component={RepoSearcher} />
-        <Route path={`/opis`} component={AppDescription} />
-        <Route path={`/silnia`} component={MathFunction} />
+        <Route path={`/description`} component={AppDescription} />
+        <Route path={`/math`} component={MathFunction} />
       </Switch>
     </Router>
   );

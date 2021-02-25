@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//dodac po podpieciu z akcja i reducerem
+import { Provider } from 'react-redux';
+import reduxStore from './store/reduxStore';
+
+const store = reduxStore();
+
 
 ReactDOM.render(
   <React.StrictMode>
