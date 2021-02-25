@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Route,
   BrowserRouter as Router,
@@ -6,6 +7,7 @@ import {
 import RepoSearcher from "./components/RepoSearcher";
 import AppDescription from "./components/AppDescription";
 import MathFunction from "./components/MathFunction";
+import { useSelector } from 'react-redux';
 
 function App() {
   return (
