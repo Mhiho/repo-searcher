@@ -1,4 +1,4 @@
-import { FETCH_REPOS } from "../actions/getRepos";
+import { FETCH_FAILURE, FETCH_REPOS } from "../actions/getRepos";
 
 export const fetchRepos = (state = [], action) => {
   switch (action.type) {
@@ -7,6 +7,11 @@ export const fetchRepos = (state = [], action) => {
           ...state,
           repos: action.payload
     };
+    case FETCH_FAILURE:
+        return {
+            ...state,
+            error: action.payload
+        }
     default:
       return state;
   }

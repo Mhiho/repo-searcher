@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react'
 
 
 const defaultState = {
-
+    
 }
 
 export const ThemeContext = createContext(defaultState)

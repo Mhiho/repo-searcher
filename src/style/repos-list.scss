@@ -13,4 +13,13 @@
   align-items: center;
   cursor: pointer;
 }
+.repos-list-a {
+    text-decoration: none;
+    &:hover {
+        color: #003d99;
+    }
+}
+a:visited, a:active, a:focus {
+    color: #002966;
+}
 

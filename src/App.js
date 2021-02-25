@@ -7,6 +7,8 @@ import {
 import RepoSearcher from "./components/RepoSearcher";
 import AppDescription from "./components/AppDescription";
 import MathFunction from "./components/MathFunction";
+import PageNotFound from './components/PageNotFound';
+
 import { useSelector } from 'react-redux';
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
         <Route exact path={`/`} component={RepoSearcher} />
         <Route path={`/description`} component={AppDescription} />
         <Route path={`/math`} component={MathFunction} />
+        <Route component={PageNotFound} />
       </Switch>
     </Router>
   );

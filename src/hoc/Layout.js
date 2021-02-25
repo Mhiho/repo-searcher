@@ -15,7 +15,7 @@ function Layout({ children }) {
         <nav>
           <ul className='layout-ul'>
             { menuLinks.map((item,index) => {
-              return <li key={`menuLink-${index}`}><Link to={item.link}>{item.name}</Link></li>
+              return <li key={`menuLink-${index}`}><Link className='layout-a' to={item.link}>{item.name}</Link></li>
             })}
           </ul>
         </nav>

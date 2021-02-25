@@ -3,6 +3,8 @@ import { getRepos } from '../../actions/getRepos';
 import { useDispatch } from 'react-redux';
 import '../../style/searchbar.scss';
 
+import errorHandler from '../../hoc/errorHandler';
+
 const SearchBar = () => {
     const [login, setLogin] = useState('');
     const [loading, setLoading] = useState(true);
@@ -34,4 +36,4 @@ const SearchBar = () => {
 }
 
 
-export default SearchBar;
+export default errorHandler(SearchBar);
