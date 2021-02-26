@@ -1,0 +1,17 @@
+.factorial-container {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.factorial-input {
+    width: 280px;
+    margin: 4px 0 4px 10px;
+}
+input[type=number] {
+    height: 1.5rem;
+}
+input[type=search] {
+    border-radius: 5px 0 0 5px;
+}

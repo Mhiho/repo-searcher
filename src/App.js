@@ -9,7 +9,6 @@ import AppDescription from "./components/AppDescription";
 import MathFunction from "./components/MathFunction";
 import PageNotFound from './components/PageNotFound';
 
-import { useSelector } from 'react-redux';
 
 function App() {
   return (
