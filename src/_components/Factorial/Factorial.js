@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
-import "../../style/factorial.scss";
-import { factorialAlg } from './factorialAlgoritm';
+import "../../style/main.scss";
+import { factorialAlg } from "./factorialAlgoritm";
 
 function Factorial() {
   const [number, setNumber] = useState(0);
@@ -14,20 +14,33 @@ function Factorial() {
   };
   return (
     <>
-      <div className="factorial-container">
-        <form onSubmit={submitHandler}>
-          <div className="factorial-input">
-            <input
-              type="number"
-              value={number}
-              onChange={(e) => setNumber(e.target.value)}
-              max="100"
-            />
-            <input type="submit" value="Sprawdź wynik" />
+      <section className="factorial-container">
+        <div className="row">
+          <form onSubmit={submitHandler}>
+            <div className="factorial-input">
+              <label>
+                Oblicz silnię z podstawionej liczby:
+                <input
+                  name="factorial"
+                  type="number"
+                  value={number}
+                  onChange={(e) => setNumber(e.target.value)}
+                  max="10000"
+                  min="0"
+                />
+              </label>
+              <input type="submit" value="Sprawdź wynik" />
+            </div>
+          </form>
+        </div>
+      </section>
+      <article>
+        <div className="row">
+          <div className="col">
+            <h4 className="factorial-result">{res && `Wynik: ${res}`}</h4>
           </div>
-        </form>
-      </div>
-      <div>Wynik: {res}</div>
+        </div>
+      </article>
     </>
   );
 }

@@ -1,0 +1,22 @@
+@import './_error-handler';
+@import './_factorial';
+@import './_layout';
+@import './_repos-list';
+@import './_searchbar';
+
+section, article {
+    margin: 4px 8x 4px 8px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }

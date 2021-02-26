@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "../axiosInstance";
-import "../style/error-handler.scss";
+import "../style/main.scss";
 
 const checkRequests = (Wrapped) => {
     function CheckRequests(props) {
@@ -8,6 +8,7 @@ const checkRequests = (Wrapped) => {
       useEffect(() => {
         axios.interceptors.response.use(
           function (response) {
+            // setError(null)
             return response;
           },
           function (error) {
@@ -19,12 +20,13 @@ const checkRequests = (Wrapped) => {
             }
           }
         );
+        return axios.interceptors.response.use()
       });
   
       return (
         <>
           <Wrapped {...props} />
-          <div className="error-handler-container">
+          <div className='row'>
             <h3 className="error-handler-error">{error}</h3>
           </div>
         </>

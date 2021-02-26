@@ -1,5 +1,6 @@
 import axios from "../axiosInstance";
 export const FETCH_REPOS = "FETCH_REPOS";
+export const FETCH_FAILURE = "FETCH_FAILURE";
 
 export const getRepos = (login) => {
   return async dispatch => {
@@ -10,7 +11,9 @@ export const getRepos = (login) => {
         payload: response.data,
       });
     } catch (err) {
-      console.error(err);
+      dispatch({
+        type: FETCH_FAILURE
+      })
     }
   };
 };

@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import '../style/layout.scss';
+import '../style/main.scss';
 
 const menuLinks = [
-  {name: 'Wyszukiwarka', link: '/'},
-  {name: 'Opis aplikacji', link: '/description'},
+  {name: 'Repozytoria', link: '/'},
+  {name: 'Opis zadania', link: '/description'},
   {name: 'Silnia', link: '/math'}
 ]
 
 function Layout({ children }) {
   return (
-    <div className="App">
-      <header className="App-header">
+    <>
+      <header>
         <nav>
           <ul className='layout-ul'>
             { menuLinks.map((item,index) => {
-              return <li key={`menuLink-${index}`}><Link className='layout-a' to={item.link}>{item.name}</Link></li>
+              return <li key={`menuLink-${index}`}><Link className='layout-a' to={item.link}>{item.name.toUpperCase()}</Link></li>
             })}
           </ul>
         </nav>
@@ -23,7 +23,7 @@ function Layout({ children }) {
       <main>
         <div>{children}</div>
       </main>
-    </div>
+    </>
   );
 }
 export default Layout;

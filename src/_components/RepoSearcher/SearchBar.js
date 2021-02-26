@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { getRepos } from "../../actions/getRepos";
 import { useDispatch } from "react-redux";
-import "../../style/searchbar.scss";
+import "../../style/main.scss";
 import errorHandler from "../../hoc/errorHandler";
 
 const SearchBar = () => {
@@ -26,24 +26,27 @@ const SearchBar = () => {
   };
 
   return (
-    <div>
-      <div className="searchbar-container">
+    <section>
+      <div className="row">
         <form onSubmit={submitHandler}>
           <div className="searchbar-input">
+            <label>
+             Wyszukaj najświeższe repozytoria dla usera:
             <input
-              placeholder="Search by user"
+              placeholder="Szukaj według loginu"
               type="search"
               value={login}
               onChange={(e) => setLogin(e.target.value)}
-            />
-            <input type="submit" value="Search Repos" />
+              />
+              </label>
+            <input type="submit" value="Szukaj" />
           </div>
         </form>
       </div>
-      <div className="error-handler-container">
+      <div className="row">
         <h4 className="error-handler-error">{error}</h4>
       </div>
-    </div>
+    </section>
   );
 };
 
