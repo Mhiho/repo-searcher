@@ -8,7 +8,9 @@ const checkRequests = (Wrapped) => {
       useEffect(() => {
         axios.interceptors.response.use(
           function (response) {
-            // setError(null)
+            if(response.status === 200){
+              setError(null)
+            }
             return response;
           },
           function (error) {

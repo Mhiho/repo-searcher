@@ -1,9 +1,15 @@
+@import './colors.scss';
+
 .repos-list-ul {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   list-style-type: none;
-  height: 20vh;
+  max-height: 20vh;
+}
+.repos-list-title {
+  margin: 24px 16px 8px 16px;
 }
 .repos-list-li {
   height: 2rem;
@@ -14,12 +20,13 @@
   cursor: pointer;
 }
 .repos-list-a {
+    color: lighten($black,50%);
     text-decoration: none;
     &:hover {
-        color: #003d99;
+        color: $black;
     }
 }
 a:visited, a:active, a:focus {
-    color: #002966;
+    color: $black;
 }
 

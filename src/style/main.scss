@@ -1,8 +1,8 @@
-@import './_error-handler';
-@import './_factorial';
-@import './_layout';
-@import './_repos-list';
-@import './_searchbar';
+@import './error-handler';
+@import './factorial';
+@import './layout';
+@import './repos-list';
+@import './searchbar';
 
 section, article {
     margin: 4px 8x 4px 8px;
@@ -12,6 +12,7 @@ section, article {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    height: 40px;
   }
   
   .column {
