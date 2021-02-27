@@ -22,7 +22,7 @@ input[type="submit"] {
   width: 100vw;
   display: flex;
 }
-.factorial-result {
+.factorial-result, .factorial-result-history {
   display: flex;
   width: 200px;
   margin: 24px 16px 8px 16px;
