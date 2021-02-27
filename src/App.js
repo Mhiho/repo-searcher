@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, HashRouter } from "react-router-dom";
 import RepoSearcher from "./components/RepoSearcher";
 import AppDescription from "./components/AppDescription";
 import MathFunction from "./components/MathFunction";
@@ -8,16 +8,15 @@ import { ThemeProvider } from "./store/contextAPI";
 
 function App() {
   return (
-    <ThemeProvider>
-      <Router>
-        <Switch>
+    <HashRouter>
+      <ThemeProvider>
+        <Router>
           <Route path={`/description`} component={AppDescription} />
           <Route path={`/math`} component={MathFunction} />
           <Route path={`/`} component={RepoSearcher} />
-          {/* <Route component={PageNotFound} /> */}
-        </Switch>
-      </Router>
-    </ThemeProvider>
+        </Router>
+      </ThemeProvider>
+    </HashRouter>
   );
 }
 
