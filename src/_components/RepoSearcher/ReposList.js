@@ -4,11 +4,14 @@ import "../../style/main.scss";
 
 function ReposList() {
   const { repos } = useSelector((state) => state.repos);
-  const dupa = useSelector((state) => state);
-  console.log(dupa);
+
+  const commitsMock = [
+    '1','2','3','4','5'
+  ]
+
   return (
     <section>
-      <div className="row">
+      <div className="row repos-title-container">
         <h3 className='repos-list-title'>{repos && `Repozytoria:`}</h3>
       </div>
       <div>
@@ -21,11 +24,18 @@ function ReposList() {
             repos &&
             repos.map((repo, index) => {
               return (
+                <>
                 <li className="repos-list-li" key={`repos-list-${index}`}>
-                  <a className="repos-list-a" href={repo.html_url}>
-                    {repo.name}
-                  </a>
+                  {repo.name}
                 </li>
+                <li>
+                  <ul className="repos-list-a">
+                    {
+                      commitsMock.map((commit,index)=>(<li key={`commit-${index}`}>{commit}</li>))
+                    }
+                  </ul>
+                </li>
+                </>
               );
             })
           )}
