@@ -6,7 +6,7 @@ import errorHandler from "../../hoc/errorHandler";
 
 const SearchBar = () => {
   const [login, setLogin] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
   const [error, setError] = useState("");
 
   const dispatch = useDispatch();

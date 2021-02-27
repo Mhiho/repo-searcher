@@ -5,9 +5,9 @@ import "../style/main.scss";
 import hat from "../assets/img/hat.png";
 
 const menuLinks = [
+  { name: "Szukaj repo", link: "/" },
+  { name: "O zadaniu", link: "/description" },
   { name: "Silnia", link: "/math" },
-  { name: "Opis zadania", link: "/description" },
-  { name: "Repozytoria", link: "/" },
 ];
 
 function Layout({ children }) {
