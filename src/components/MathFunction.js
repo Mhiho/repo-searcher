@@ -5,9 +5,7 @@ import Factorial from "../_components/Factorial/Factorial";
 function MathFunction() {
   return (
     <Layout>
-      <Layout>
         <Factorial />
-      </Layout>
     </Layout>
   );
 }
