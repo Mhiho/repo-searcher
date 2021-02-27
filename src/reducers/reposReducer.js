@@ -5,12 +5,12 @@ export const fetchRepos = (state = {}, action) => {
     case FETCH_REPOS:
       return {
         ...state,
-        repos: action.payload,
+        data: action.payload,
       };
     case FETCH_FAILURE:
       return {
         ...state,
-        repos: null
+        data: null
       }
     default:
       return state;

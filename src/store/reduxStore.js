@@ -3,7 +3,7 @@ import thunk from 'redux-thunk';
 import { fetchRepos } from '../reducers/reposReducer';
 
 const rootReducer = combineReducers({
-   repos: fetchRepos 
+   payload: fetchRepos 
 })
 
 export default function reduxStore() {
