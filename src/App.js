@@ -10,9 +10,9 @@ function App() {
     <HashRouter>
       <ThemeProvider>
         <Router>
+          <Route path={`/`} component={RepoSearcher} />
           <Route path={`/description`} component={AppDescription} />
           <Route path={`/math`} component={MathFunction} />
-          <Route exact path={`/`} component={RepoSearcher} />
         </Router>
       </ThemeProvider>
     </HashRouter>
