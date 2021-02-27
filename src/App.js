@@ -11,10 +11,10 @@ function App() {
     <ThemeProvider>
       <Router>
         <Switch>
-          <Route exact path={`/`} component={RepoSearcher} />
           <Route path={`/description`} component={AppDescription} />
           <Route path={`/math`} component={MathFunction} />
-          <Route component={PageNotFound} />
+          <Route path={`/`} component={RepoSearcher} />
+          {/* <Route component={PageNotFound} /> */}
         </Switch>
       </Router>
     </ThemeProvider>
