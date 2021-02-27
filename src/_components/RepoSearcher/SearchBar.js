@@ -31,14 +31,14 @@ const SearchBar = () => {
         <form onSubmit={submitHandler}>
           <div className="searchbar-input">
             <label>
-             Wyszukaj najświeższe repozytoria dla usera:
-            <input
-              placeholder="Szukaj według loginu"
-              type="search"
-              value={login}
-              onChange={(e) => setLogin(e.target.value)}
+              Wyszukaj najświeższe repozytoria dla usera:
+              <input
+                placeholder="Szukaj według loginu"
+                type="search"
+                value={login}
+                onChange={(e) => setLogin(e.target.value)}
               />
-              </label>
+            </label>
             <input type="submit" value="Szukaj" />
           </div>
         </form>

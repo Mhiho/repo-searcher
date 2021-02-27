@@ -79,14 +79,14 @@ function AppDescription() {
         <article className="description-uls">
           <h4>Ad.3</h4>
           <ul>
-            {sub2.map((li, index) => (
+            {sub3.map((li, index) => (
               <li key={`ad3-${index}`}>{li}</li>
             ))}
           </ul>
         </article>
         <article className="description-uls">
-        <h4>Ogólne:</h4>
-        <ul>
+          <h4>Ogólne:</h4>
+          <ul>
             {general.map((li, index) => (
               <li key={`general-${index}`}>{li}</li>
             ))}

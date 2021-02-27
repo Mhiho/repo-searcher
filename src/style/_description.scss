@@ -1,23 +1,23 @@
-@import '../style/colors';
+@import "../style/colors";
 
-ol{
-    font-weight: 900;
+ol {
+  font-weight: 900;
 }
 .description-part {
-    cursor: pointer;
-    background: $accidental;
+  cursor: pointer;
+  background: $accidental;
 }
 
 .description-li {
-    list-style-type: none;
-    // margin: 4px 4px 4px 24px;
+  list-style-type: none;
+  // margin: 4px 4px 4px 24px;
 }
 .description-ul {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 .description-uls ul {
-    margin: 12px 8px 12px 24px;
+  margin: 12px 8px 12px 24px;
 }
 .description-uls ul li {
-    margin: 8px;
+  margin: 8px;
 }

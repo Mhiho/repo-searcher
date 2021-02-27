@@ -4,7 +4,6 @@ import "../../style/main.scss";
 
 function ReposList() {
   const { payload } = useSelector((state) => state);
-  console.log(payload);
 
   return (
     <section>
@@ -33,7 +32,7 @@ function ReposList() {
                     {repo.name}
                   </li>
                   <li>
-                    <ul className="repos-list-a">
+                    <ul className="repos-list-sub-ul">
                       {payload &&
                         payload.data &&
                         payload.data.commits &&

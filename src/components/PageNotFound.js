@@ -1,8 +1,6 @@
-import React from 'react';
+import React from "react";
 
 function PageNotFound() {
-    return(
-        <h1>Szukana strona nie istnieje...</h1>
-    )
+  return <h1>Szukana strona nie istnieje...</h1>;
 }
 export default PageNotFound;

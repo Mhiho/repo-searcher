@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import "./colors.scss";
 
 .repos-list-ul {
   display: flex;
@@ -24,16 +24,17 @@
   cursor: pointer;
 }
 .repos-list-li:nth-child(odd) {
-  background: $accidental;
+  background: $second;
 }
 .repos-list-a {
-    color: lighten($black,50%);
-    text-decoration: none;
-    &:hover {
-        color: $black;
-    }
-}
-a:visited, a:active, a:focus {
+  color: lighten($black, 50%);
+  text-decoration: none;
+  &:hover {
     color: $black;
+  }
 }
-
+a:visited,
+a:active,
+a:focus {
+  color: $black;
+}
