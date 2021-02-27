@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 .repos-list-li:nth-child(odd) {
-  background: $second;
+  background: $accidental;
 }
 .repos-list-a {
   color: lighten($black, 50%);
@@ -37,4 +37,11 @@ a:visited,
 a:active,
 a:focus {
   color: $black;
+}
+.repos-list-commit-li:nth-child(even) {
+  background: darken($second,5%);
+  min-width: 280px;
+}
+.repos-list-sub-ul {
+  margin: 12px 0 12px 0;
 }

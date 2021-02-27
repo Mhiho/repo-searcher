@@ -41,7 +41,7 @@ function ReposList() {
                             let arr = c.comments_url.split("/");
                             console.log(arr);
                             return arr[5] === repo.name ? (
-                              <li key={`commit-${i}`}>{c.commit.message}</li>
+                              <li className='repos-list-commit-li' key={`commit-${i}`}>{c.commit.message}</li>
                             ) : null;
                           });
                         })}
