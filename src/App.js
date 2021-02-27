@@ -9,9 +9,9 @@ function App() {
   return (
     <HashRouter>
       <ThemeProvider>
-          <Route path={`/`} component={RepoSearcher} />
-          <Route path={`/description`} component={AppDescription} />
-          <Route path={`/math`} component={MathFunction} />
+          <Route exact path={`/`} component={RepoSearcher} />
+          <Route exact path={`/description`} component={AppDescription} />
+          <Route exact path={`/math`} component={MathFunction} />
       </ThemeProvider>
     </HashRouter>
   );
