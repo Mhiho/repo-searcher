@@ -34,6 +34,9 @@ function Layout({ children }) {
       <main>
         <div className="layout-container">{children}</div>
       </main>
+      <footer className={!light ? `` : `layout-footer-light`}>
+        <span className='layout-footer-span'>Autor aplikacji: <a className={!light ?`layout-footer-a` : `layout-footer-a layout-footer-a-light`} href='https://github.com/mhiho'><strong>&nbsp;Michał Pełka&nbsp;</strong></a>&#169;{new Date().getFullYear()}</span>
+      </footer>
     </>
   );
 }

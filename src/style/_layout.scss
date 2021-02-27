@@ -1,10 +1,9 @@
-@import './colors';
+@import "./colors";
 
 .layout-container {
   max-width: 1000px;
   margin: auto;
   margin-top: 10vh;
-
 }
 
 .nav {
@@ -32,16 +31,17 @@
     color: $second;
     text-decoration: none;
     &:hover {
-        color: $white;
+      color: $white;
     }
   }
   .layout-a-light {
     color: $main;
     &:hover {
-      color: darken($main,15%)
-    } }
+      color: darken($main, 15%);
+    }
+  }
 }
-.layout-logo{
+.layout-logo {
   display: block;
   float: left;
   padding: 24px;
@@ -58,4 +58,40 @@
   100% {
     transform: rotate(-180deg);
   }
+}
+
+footer {
+  background: $main;
+  color: $second;
+  width: 100vw;
+  height: 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 400;
+}
+.layout-footer-a {
+  color: $second;
+  text-decoration: none;
+  &:visited,
+  :focus,
+  :active {
+    color: $second;
+  }
+  &:hover {
+    color: $white;
+  }
+}
+.layout-footer-light {
+  background: $second;
+  color: $main;
+}
+.layout-footer-a-light strong {
+  color: $main;
+  &:hover {
+    color: darken($main, 15%);
+  }
+}
+.layout-footer-span {
+  margin-right: 64px;
 }
