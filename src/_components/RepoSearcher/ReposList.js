@@ -9,7 +9,7 @@ function ReposList() {
     <section>
       <div className="row repos-title-container">
         <h3 className="repos-list-title">
-          {payload && payload.data && `Repozytoria:`}
+          {payload && payload.data && payload.data.repos && `Repozytoria:`}
         </h3>
       </div>
       <div>
