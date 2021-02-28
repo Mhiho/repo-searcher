@@ -10,7 +10,7 @@ export const fetchRepos = (state = {}, action) => {
     case FETCH_FAILURE:
       return {
         ...state,
-        data: null
+        data: []
       }
     default:
       return state;

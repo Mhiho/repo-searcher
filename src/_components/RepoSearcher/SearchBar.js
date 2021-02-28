@@ -13,6 +13,9 @@ const SearchBar = () => {
   const regex = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i;
   const submitHandler = (e) => {
     e.preventDefault();
+    if(login === ''){
+      return;
+    }
     if (login.match(regex)) {
       setError(null);
     } else {
