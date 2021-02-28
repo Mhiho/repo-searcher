@@ -9,7 +9,14 @@ function ReposList() {
     <section>
       <div className="row repos-title-container">
         <h3 className="repos-list-title">
-          {payload && payload.data && payload.data.repos && `Repozytoria:`}
+          {payload &&
+          payload.data &&
+          payload.data.repos &&
+          payload.data.repos.length > 0
+            ? `Repozytoria użytkownika: ${
+                payload.data.repos[0].full_name.split("/")[0]
+              }`
+            : null}
         </h3>
       </div>
       <div>
@@ -40,7 +47,12 @@ function ReposList() {
                           return commit.map((c, i) => {
                             let arr = c.comments_url.split("/");
                             return arr[5] === repo.name ? (
-                              <li className='repos-list-commit-li' key={`commit-${i}`}>{c.commit.message}</li>
+                              <li
+                                className="repos-list-commit-li"
+                                key={`commit-${i}`}
+                              >
+                                {c.commit.message}
+                              </li>
                             ) : null;
                           });
                         })}
