@@ -1,7 +1,7 @@
 @import "./colors";
 
 .searchbar-input {
-  width: 320px;
+  min-width: 320px;
   margin: 24px 16px 8px 16px;
 }
 input[type="search"],
@@ -28,4 +28,12 @@ input[type="submit"] {
     background-color: darken($main, 10%);
     color: lighten($second, 20%);
   }
+}
+.searchbar-input-container {
+  width: 280px;
+}
+label {
+  display: flex;
+  width: 280px;
+  flex-wrap: wrap;
 }

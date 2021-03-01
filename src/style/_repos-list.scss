@@ -39,7 +39,7 @@ a:focus {
 }
 .repos-list-commit-li:nth-child(even) {
   background: darken($second,5%);
-  min-width: 280px;
+  min-width: 50%;
 }
 .repos-list-sub-ul {
   margin: 12px 0 12px 0;
